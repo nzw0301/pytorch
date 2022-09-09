@@ -1243,6 +1243,7 @@ install(FILES
 
 # ---[ Torch python bindings build
 add_subdirectory(../torch torch)
+set(TORCH_PYTHON_COMPILE_OPTIONS ${TORCH_PYTHON_COMPILE_OPTIONS} PARENT_SCOPE)
 
 # ==========================================================
 # END formerly-libtorch flags
